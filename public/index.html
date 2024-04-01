@@ -10,34 +10,85 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs-rtl.css">
     <title>React App</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<div class="container">
+  <H1 id="introduction">Welcome</H1>
+  <div class="container_1">
+  <div id="step-one"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3432.2899136487094!2d80.3567618752554!3d26.461727276918854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1711900229671!5m2!1sen!2sin" width="600" height="450"
+     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  <div id="step-two"  class="container "> <form action="action_page.php" method="POST" >
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <br>
+
+    <div>
+        <label for="pass">password:</label>
+        <input type="password" id="pass" name="pass" maxlength="12" required>
+    </div>
+
+    <br>
+
+    <br>
+
+    <div>
+        <label for="phone">phone #:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="bdate">birthdate:</label>
+        <input type="date" id="bdate" name="bdate">
+    </div>
+
+    
+    <br>
+
+    <div>
+        <label for="payment">payment:</label>
+        <select id="payment" name="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select>
+    </div>
+    
+    <br>
+
+    <div>
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" min="0" max="99" value="1">
+    </div>
+    
+    <br>
+
+    <div>
+        <input type="reset">
+    </div>
+
+    <br>
+
+    <div>
+        <input type="submit">
+    </div>
+
+</form></div>
+     </div>
+</div>
+<button  id ="step-three" class="start-tour">sign in</button>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
+ <script src="main.js"></script>  
+</body>
 </html>
